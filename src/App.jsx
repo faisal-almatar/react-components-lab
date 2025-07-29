@@ -1,4 +1,4 @@
-
+import WeatherForecast from "./components/WeatherForecast/WeatherForecast";
 
 const weatherForecasts = [
   {
@@ -37,18 +37,6 @@ const weatherForecasts = [
     time: 'Night',
   },
 ];
-
-const WeatherForecast = (forecast)=>{
-  const {day, img, imgAlt, conditions, time} = forecast
-    return(
-<div className="weather">
-  <h2>{day}</h2>
-  <img src={day} alt={imgAlt} />
-  <p><span>conditions: </span>{conditions}</p>
-  <p><span>time: </span>{time}</p>
-</div>
-    )
-}
 
 const App = () => {
 
